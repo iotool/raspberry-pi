@@ -12,6 +12,9 @@ sudo mount -o remount,rw /                  Filesystem auf Writeable ändern
 sudo sync                                   RAM-Puffer auf SD-Karte speichern
 df                                          DiscFree je Mount-Point anzeigen
 mount                                       Mounts anzeigen
+
+top                                         Auslastung RAM, laufende Prozesse
+vcgencmd measure_temp                       Temperatur Prozessor
 ```
 
 ## RaspiOS installieren
