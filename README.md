@@ -13,6 +13,9 @@ sudo sync                                   RAM-Puffer auf SD-Karte speichern
 df                                          DiscFree je Mount-Point anzeigen
 mount                                       Mounts anzeigen
 
+ifconfig                                    Netzwerk IP-Adresse anzeigen
+netstat -npl                                Netzwerk Ports/Verbindungen anzeigen
+
 top                                         Auslastung RAM, laufende Prozesse
 vcgencmd measure_temp                       Temperatur Prozessor
 ```
