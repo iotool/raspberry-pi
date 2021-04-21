@@ -3,8 +3,8 @@
 ## Befehle
 
 ```bash
-sudo shutdown -h now                        RPi stoppen
-sudo reboot                                 RPi neu starten
+sudo shutdown -h now                        RPi stoppen (LED 10 kurz, lang, aus)
+sudo reboot                                 RPi neu starten (LED 10 kurz, lang, aus, flackern)
 sudo raspi-config                           RPi konfigurieren
 
 sudo mount -o remount,ro /                  Filesystem auf Read-Only ändern
