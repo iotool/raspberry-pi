@@ -41,6 +41,52 @@ network={
 In wpa_supplicant.conf werden die Zugangsdaten für das WiFi-Netzwerk hinterlegt.
 Die leere Datei ssh startet den SSH-Dienst für den Login mit Putty.
 
+## RaspiOS konfigurieren
+
+```
+sudo raspi-config
+```
+
+* 1 System Options
+  * S1 Wireless LAN
+  * S2 Audio
+  * S3 Password
+  * S4 Hostname
+  * S5 Boot / Auto Login => B2 Console + Autologin
+  * S6 Network at Boot
+  * S7 Splash Screen
+  * S8 Power LED
+* 2 Display Options
+  * D1 Resolution
+  * D2 Underscan
+  * D3 Pixel Doubling
+  * D4 Screen Blanking
+* 3 Interface Options
+  * P1 Camera
+  * P2 SSH
+  * P3 VNC
+  * P4 SPI
+  * P5 I2C
+  * P6 Serial Port
+  * P7 1-Wire
+  * P8 Remote GPIO
+* 4 Performance Options
+  * P1 Overclock
+  * P2 GPU Memory
+  * P3 Overlay File System
+  * P4 Fan
+* 5 Localisation Options
+  * L1 Locale
+  * L2 Timezone
+  * L3 Keyboard
+  * L4 WLAN Country
+* 6 Advanced Options
+  * A1 Expand Filesystem
+  * A2 GL Driver
+  * A3 Compositor
+  * A4 Network Interface Name
+  * A5 Network Proxy Settings 
+
 **Login SSH**
 
 * Download Putty.exe
@@ -52,21 +98,21 @@ Die leere Datei ssh startet den SSH-Dienst für den Login mit Putty.
 
 ## Beispiele
 
-*df*
+*df -h*
 
 ```
-Filesystem     1K-blocks    Used Available Use% Mounted on
-/dev/root       29764176 1180124  27342096   5% /
-devtmpfs          187228       0    187228   0% /dev
-tmpfs             220204       0    220204   0% /dev/shm
-tmpfs             220204    3112    217092   2% /run
-tmpfs               5120       0      5120   0% /run/lock
-tmpfs             220204       0    220204   0% /sys/fs/cgroup
-tmpfs             220204       0    220204   0% /var/tmp
-tmpfs             220204      16    220188   1% /tmp
-tmpfs             220204       8    220196   1% /var/log
-/dev/mmcblk0p1    258095   48787    209309  19% /boot
-tmpfs              44040       0     44040   0% /run/user/1000
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        29G  1.2G   27G   5% /
+devtmpfs        183M     0  183M   0% /dev
+tmpfs           216M     0  216M   0% /dev/shm
+tmpfs           216M  3.1M  213M   2% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           216M     0  216M   0% /sys/fs/cgroup
+tmpfs           216M     0  216M   0% /var/tmp
+tmpfs           216M   16K  216M   1% /tmp
+tmpfs           216M  8.0K  216M   1% /var/log
+/dev/mmcblk0p1  253M   48M  205M  19% /boot
+tmpfs            44M     0   44M   0% /run/user/1000
 ```
 
 *mount*
