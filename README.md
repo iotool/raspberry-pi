@@ -41,6 +41,15 @@ network={
 In wpa_supplicant.conf werden die Zugangsdaten für das WiFi-Netzwerk hinterlegt.
 Die leere Datei ssh startet den SSH-Dienst für den Login mit Putty.
 
+**Login SSH**
+
+* Download Putty.exe
+* Putty: Host Name = raspberrypi (oder IP-Adresse 192.168.0.xxx)
+* Putty: Connection Type = SSH
+* Putty: Button Open
+* Putty: login as = pi
+* Putty: pi@raspberrypi's password: raspberry
+
 ## RaspiOS konfigurieren
 
 ```
@@ -91,15 +100,6 @@ Overlay = YES bewirkt, dass alle Änderungen am Filesystem nur virtuell sind.
 Nach jedem Restart vom Raspberry ist der ursprüngliche Inhalt wieder vorhanden
 Nach ein paar Monaten wird die SD-Karte defekt, weil das OS dauernd Logs usw schreibt.
 Alternativ kann dass Filesystem auf Read-Only geändert werden.
-
-**Login SSH**
-
-* Download Putty.exe
-* Putty: Host Name = raspberrypi (oder IP-Adresse 192.168.0.xxx)
-* Putty: Connection Type = SSH
-* Putty: Button Open
-* Putty: login as = pi
-* Putty: pi@raspberrypi's password: raspberry
 
 ## Beispiele
 
