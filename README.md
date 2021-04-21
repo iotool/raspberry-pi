@@ -72,8 +72,8 @@ sudo raspi-config
   * P8 Remote GPIO
 * 4 Performance Options
   * P1 Overclock
-  * P2 GPU Memory
-  * P3 Overlay File System
+  * P2 GPU Memory => 16 MB
+  * P3 Overlay File System => overlay_yes (nur virtuelle Änderungen)
   * P4 Fan
 * 5 Localisation Options
   * L1 Locale
@@ -86,6 +86,11 @@ sudo raspi-config
   * A3 Compositor
   * A4 Network Interface Name
   * A5 Network Proxy Settings 
+
+Overlay = YES bewirkt, dass alle Änderungen am Filesystem nur virtuell sind.
+Nach jedem Restart vom Raspberry ist der ursprüngliche Inhalt wieder vorhanden
+Nach ein paar Monaten wird die SD-Karte defekt, weil das OS dauernd Logs usw schreibt.
+Alternativ kann dass Filesystem auf Read-Only geändert werden.
 
 **Login SSH**
 
